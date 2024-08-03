@@ -11,3 +11,6 @@ A personal portfolio website to showcase my projects, skills, and experience.
 
 ## Technologies I Used
 HTML, CSS, JavaScript
+
+## Usage
+To see the deployed website [click here](https://sara-khan26.github.io/Portfolio/)
