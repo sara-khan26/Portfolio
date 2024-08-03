@@ -1,0 +1,390 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Sara Khan Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			h1 {
+				position: relative;
+				display: inline-block;
+				cursor: pointer;
+				transition: color 0.3s ease;
+			}
+	
+			h1::after {
+				content: '';
+				position: absolute;
+				bottom: -2px;
+				left: 0;
+				width: 100%;
+				height: 2px;
+				background-color: currentColor;
+				transform: scaleX(0);
+				transform-origin: right;
+				transition: transform 0.3s ease;
+			}
+	
+			h1:hover {
+				color: rgb(233, 172, 247); /* Change the color when hovered */
+			}
+	
+			h1:hover::after {
+				transform: scaleX(1);
+				transform-origin: left;
+			}
+
+			/* styling for project section */
+			.project-container {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 20px;
+			}
+
+			.project-item {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				text-align: center;
+				gap: 20px;
+				margin: 10px;
+			}
+
+			.project-item img {
+				width: 100%;
+				height: auto;
+				max-width: 600px; /* Adjust as needed */
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+			}
+
+			@media (min-width: 768px) {
+				.project-item {
+					flex-direction: row;
+					align-items: center;
+					text-align: center;
+				}
+
+				.project-item img {
+					max-width: 50%;
+					width: auto;
+				}
+			}
+			
+			@media (max-width: 600px){
+				.project-item img {
+					max-width: 100%;
+				}
+			}
+
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<p style="margin-bottom: 1%;">Hi! I'm</p>
+						<h1>SARA KHAN</h1>
+						<p style="margin-bottom: 17%;">Aspiring Software Engineer | Tech Enthusiast</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">About Me</a></li>
+							<li><a href="#first">Skills</a></li>
+							<li><a href="#second">Certifications & Experience</a></li>
+							<li><a href="#cta">Projects</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>About Me</h2>
+										</header>
+										<p>Hello! I am Sara Khan, a passionate and driven third-year B.Tech Computer Science and Engineering student at Medi-Caps University, Indore.Python, HTML, and CSS had been the initial programming languages. I'm currently focussing on Java and front-end development. My current area of focus and effort is to enhance my skills regarding Data Structures and Algorithms (DSA).I am dedicated to expanding my knowledge and skills in the field of computer science.
+										</p>
+										<ul class="actions">
+											<li><a href="https://drive.google.com/file/d/1K3Z67mdQ4E_IUL_1soWwqG8K2nK38veE/view?usp=sharing" class="button" target="_blank">My Resume</a></li>
+										</ul>
+									</div>
+									<span class="image"><img src="images/profile.jpg" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Skills</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-code"></span>
+										<h3>Frontend</h3>
+										<p>Proficient in HTML, CSS, and JavaScript, with experience in creating responsive and visually appealing web interfaces. I have built projects like an Amazon clone and a To-Do List app to demonstrate my frontend skills.</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-copy"></span>
+										<h3>Python & Java</h3>
+										<p>Strong foundation in Python and Java, with hands-on experience in developing applications and solving complex problems. I have completed various projects, including a Library Management App and a women’s clothing reviews prediction model using machine learning.
+										</p>
+									</li>
+									<li>
+										<span class="icon major style5 fa-gem"></span>
+										<h3>DSA</h3>
+										<p>Experinced with implementing and executing data structures and algorithms, including arrays, trees, stacks, queues, and mathematics-based algorithms. I am continuously working on my skills in DSA to solve complex computational problems efficiently through platforms like leetcode.</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+									</ul>
+								</footer>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Certifications & Experience</h2>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon"><img src="images/google.jpg" alt="" style="width: 100%; height: auto; max-width: 100px; max-height: 100px; object-fit: cover;"></span>
+										<br><a href="https://drive.google.com/file/d/18zkX7_zTB4YyktFWadkX6dVrgFAU0wiG/view?usp=sharing"target="_blank">Data Analytics: Data Foundation</a>
+									</li>
+									<li class="style2">
+										<span class="icon"><img src="images/coursera.jpg" alt="" style="width: 100%; height: auto; max-width: 100px; max-height: 100px; object-fit: cover;"></span>
+										<br><a href="https://www.coursera.org/account/accomplishments/verify/KWY356VTRKPT"target="_blank">Introduction to Machine Learning</a>
+									</li>
+									<li class="style3">
+										<span class="icon"><img src="images/infosys.jpg" alt="" style="width: 100%; height: auto; max-width: 100px; max-height: 100px; object-fit: cover;"></span>
+										<br><a href="https://drive.google.com/file/d/1FehASwl4A91KShV9eD2G2mKlrDxOZRsy/view"target="_blank">Programming Fundamentals using Python - Part 1 & 2</a>
+									</li>
+									<li class="style4">
+										<span class="icon"><img src="images/tcs.jpg" alt="" style="width: 100%; height: auto; max-width: 100px; max-height: 100px; object-fit: cover;"></span>
+										<br><a href="https://drive.google.com/file/d/1SED_T22D8V9Wu_1PDdfMnMrvs6I80VlF/view?usp=sharing"target="_blank">DataPlus Overview Course</a>
+									</li>
+									<li class="style5">
+										<span class="icon"><img src="images/kpmg.jpg" alt="" style="width: 100%; height: auto; max-width: 100px; max-height: 100px; object-fit: cover;"></span>
+										<br><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/KPMG%20AU/m7W4GMqeT3bh9Nb2c_KPMG%20AU_ZpMShzwZMJr4cSf9R_1691568998004_completion_certificate.pdf"target="_blank">Data Analytics Consulting Virtual Internship</a>
+									</li>
+								</ul>
+								<p class="content"><a href="https://drive.google.com/file/d/1tpufsU2x2AJBceK-qpfiNnowQzkfteqo/view"target="_blank"><strong>Google AI-ML Virtual Internship:</strong></a>
+									<br>Learned to demystify machine learning by programming neural networks with TensorFlow.
+									Trained custom object detection models using TensorFlow Lite and the TensorFlow Lite Model Maker library, building
+									on initial object detection skills.
+									Enhanced the product image search feature by building and calling it from the backend of a mobile app.
+									Developed custom image classification models, improving the skills acquired in the initial image classification pathway.
+
+									<br><br><a href="https://drive.google.com/file/d/1T--H1S94CAlDH5YtCn9SB_JkVs3qnlL-/view?usp=sharing"target="_blank"><strong>Python Programming Internship</strong></a>
+									<br>Gained a foundational understanding of Python, covering syntax, data types, and basic programming concepts..
+									Explored various Python libraries such as NumPy, Pandas, and Matplotlib, focusing on their applications in data
+									manipulation and visualization.
+									Mastered techniques for reading and manipulating data using Pandas Data Frames, essential for data analysis and
+									preprocessing tasks.
+									Studied various machine learning algorithms, understanding their applications and implementation in Python.
+								</p>
+								<footer class="major"> 
+									<!-- <ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul> -->
+								</footer>
+							</section>
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Projects</h2>
+								</header>
+
+								<div class="project-container">
+									<div
+										class="project-item"
+										style="
+											display: flex;
+											align-items: center;
+											margin-bottom: 20px;
+											margin-top: 10px;
+										"
+									>
+										<!-- Image -->
+										<img
+											class="images"
+											src="images/proj1.jpg"
+											alt="Hostel Management System"
+											style="
+												height: 300px;
+												width: 500px;
+												margin-right: 20px;
+												box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+												border-radius: 20px;
+												border: solid black;
+											"
+										/>
+										<!-- Text -->
+										<div
+											style="margin-top: 30px;
+													margin-right: 5%;
+													margin-left: 50px"
+										>
+											<h2 style="text-align: left;"><a href="https://github.com/sara-khan26/Library-Management-System.git"target="_blank">Library Management System</a></h2>
+											<p style="text-align: left;">
+												This is a Library Management System developed using Python and the Tkinter library. The application allows users to manage library memberships, handle book details, and maintain records of members and their borrowed books.The system features functionalities such as adding, showing, updating, deleting, and resetting member information. It also provides an interface to select available books, which automatically updates the membership information section.
+											</p>
+										</div>
+									</div>
+			
+									<div
+										class="project-item"
+										style="
+											display: flex;
+											align-items: center;
+											margin-bottom: 20px;
+											margin-top: 10px;
+										"
+									>
+										<!-- Image -->
+			
+										<img
+											class="images"
+											src="images/proj2.jpg"
+											alt="Cake Delivery Website"
+											style="
+												height: 300px;
+												width: 500px;
+												margin-right: 20px;
+												box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+												margin-top: 30px;
+												border-radius: 20px;
+												border: solid black;
+											"
+										/>
+										<!-- Text -->
+										<div
+											style="margin-top: 30px; 
+													margin-right: 5%; 
+													margin-left: 50px"
+										>
+											<h2 style="text-align: left;"><a href="https://github.com/sara-khan26/Women-Cloth-Reviews-Prediction-with-Multi-Nomial-Na-ve-Bayes.git" target="_blank">Women Cloth Reviews Prediction with Multi Nomial Na ve Bayes</a>
+											</h2>
+											<p style="text-align: left;">
+												This project analyzes and classifies women's clothing reviews from an e-commerce platform using machine learning techniques. The objective is to predict product ratings based on customer reviews.
+											</p>
+										</div>
+									</div>
+			
+									<div
+										class="project-item"
+										style="display: flex; 
+												align-items: center; 
+												margin-top: 20px"
+									>
+										<!-- Image -->
+										<img
+											class="images"
+											src="images/proj3.jpg"
+											alt="Salon Appointment Booking System"
+											style="
+												width: 500px;
+												height: 300px;
+												margin-right: 20px;
+												margin-top: 30px;
+												box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+												border-radius: 20px;
+												border: solid black;
+											"
+										/>
+										<!-- Text -->
+										<div
+											style="
+												margin-top: 60px;
+												margin-right: 5%;
+												margin-left: 50px;
+												margin-bottom: 50px;
+											"
+										>
+											<h2 style="text-align: left;"><a href="https://github.com/sara-khan26/Amazon-clone.git"target="_blank">Amazon Clone</a></h2>
+											<p style="text-align: left;">
+												This project is a static replication of the Amazon website, created using only HTML and CSS. The purpose of this project is to demonstrate frontend development skills, focusing on layout, styling, and visual design.
+											</p>
+										</div>
+									</div>
+
+									<div
+										class="project-item"
+										style="
+											display: flex;
+											align-items: center;
+											margin-bottom: 20px;
+											margin-top: 10px;
+										"
+									>
+										<!-- Image -->
+										<img
+											class="images"
+											src="images/proj4.jpg"
+											alt="Hostel Management System"
+											style="
+												height: 300px;
+												width: 500px;
+												margin-right: 20px;
+												box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+												border-radius: 20px;
+												border: solid black;
+											"
+										/>
+										<!-- Text -->
+										<div
+											style="margin-top: 30px; 
+													margin-right: 5%; 
+													margin-left: 50px"
+										>
+											<h2 style="text-align: left;"><a href="https://github.com/sara-khan26/To-Do-List-app.git"target="_blank">To-Do List App</a></h2>
+											<p style="text-align: left;">
+												This project is a simple to-do list application built using HTML, CSS, and JavaScript. The purpose of this project was to create a digital tool for managing tasks and organizing daily activities.
+											</p>
+										</div>
+									</div>
+								</div>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h1><strong>Connect</strong></h1>
+							<h2 style="color: white">
+								<a href="mailto:srkh725@gmail.com">srkh725@gmail.com</a>
+							</h2>
+							<ul class="icons">
+								<li><a href="http://www.linkedin.com/in/sara-khan-abb762268" class="icon brands fa-linkedin alt"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/sara-khan26" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="https://www.instagram.com/saphhire.study?igsh=bnFwb2Q3MGFxM3c=" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+							</ul>
+						</section>
+					</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
